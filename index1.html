@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Новоселов Ефим - веб-разработка</title>
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">Efim Novoselov</div>
+            <div class="logo">Ефим Новоселов</div>
             <div class="menu">
                 <ul>
                     <li>Обо мне</li>
@@ -30,48 +32,53 @@
         </div>
     </div>
     
-    <div class="Обо мне">
+    <div class="AboutMe">
         <div class="title_container2">
             <h1>Обо мне</h1>
-            <img src="https://www.google.com/logos/doodles/2021/russia-national-day-2021-6753651837108960-l.png">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, in.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, at!</p>
+            <center><div class="decor"></div></center>
+            <p class="text1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio repellat mollitia, cum rem magni. Atque, unde eveniet provident pariatur eligendi nam amet repellat ipsum iste dolore nesciunt cumque quidem! Eveniet id, eaque veritatis fugiat. Minus voluptate similique corporis tenetur eius perferendis vero quos soluta modi, dolor earum asperiores sint suscipit laudantium cumque! Provident enim in, facere exercitationem neque asperiores nihil pariatur repudiandae vitae veniam deserunt assumenda aperiam atque debitis tempore non ad adipisci vel rerum corporis dolorem. Optio fuga nostrum minus quisquam in nulla repudiandae porro perspiciatis at, unde temporibus asperiores, nemo cum, natus vel dolorem similique quam inventore aliquam.</p>
+            <p class="text2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate voluptatibus aliquid nesciunt, quisquam commodi et vitae ex porro repellat, magni dolores sed nisi ea, dicta aliquam voluptatum minus molestiae ipsum animi nam? Perferendis ullam voluptatibus explicabo animi eius, laborum laudantium et aut inventore labore alias minus, nihil ipsum officiis pariatur!</p>
             <input type="submit" value="Скачать резюме">
         </div>
     </div>
     
-    <div class="Что я умею">
+    <div class="WhatIcanDo">
         <div class="title_container3">
             <h1>Что я умею</h1>
+            <center><div class="decor"></div></center>
             <div class="menu2">
-                <ol>
-                    <li><h3>Веб-дизайн</h3><br> <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, sequi.</h6></li>
-                    <li><h3>Разработка</h3><br> <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, sequi.</h6> </li>
-                    <li><h3>CEO-оптимизация</h3><br> <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, sequi.</h6> </li>
-                    <li><h3>Маркетинг</h3><br> <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, sequi.</h6> </li>
-                </ol>
+                <ul>
+                    <li class="li1"><h3>Веб-дизайн</h3><br> <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, sequi.</h6></li>
+                    <li class="li2"><h3>Разработка</h3><br> <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, sequi.</h6> </li>
+                    <li class="li3"><h3>CEO-оптимизация</h3><br> <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, sequi.</h6> </li>
+                    <li class="li4"><h3>Маркетинг</h3><br> <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, sequi.</h6> </li>
+                </ul>
             </div>
         </div>
     </div>
     
-    <div class="Кейсы">
+    <div class="Cases">
         <div class="title_container4">
             <h1>Кейсы</h1>
-            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, minima!</h4>
-            <img src="Screenshot" alt="Здесь должна быть картинка">
+            <center><div class="decor"></div></center>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt debitis, vero voluptatem eveniet, tempore repellat reprehenderit ex animi iste. Pariatur!</p>
+            <img class="img">
             <h2>Client:</h2><br> <small>Какая-то компания</small>
             <h2>Website:</h2><br> <small>https://www.somebody.com</small>
-            <h2>Название проекта:</h2><br> <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, quam.</small>
+            <h3>Название проекта:</h3><br> <div class="NameOfProject">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, quam.</div>
             <br><input type="submit" value="visit live site">
         </div>
     </div>
     
-    <div class="Расчёт чтоимости">
+    <div class="CostCalculation">
         <div class="title_container5">
             <h1>Расчет стоимости</h1>
-            <h2>Тип сайта</h2>
+            
+        <div class="Cost">
+        <h2>Тип сайта</h2>
         <form action="s">
-            <select name="list1" id="list" value="" placeholder="Выберите пункт...">
+            <select name="list1" id="list1" value="">
+            <option value="" disabled selected>Выберите пункт...</option>
             <option value="Opt1">Значение1</option>
             <option value="Opt2">Значение2</option>
             <option value="Opt1">Значение3</option>
@@ -81,7 +88,8 @@
         
         <h2>Дизайн</h2>
         <form action="g">
-            <select name="list2" id="list" value="" placeholder="Выберите пункт...">
+            <select name="list2" id="list2" value="">
+            <option value="" disabled selected>Выберите пункт...</option>
             <option value="Opt1">Значение1</option>
             <option value="Opt2">Значение2</option>
             <option value="Opt1">Значение3</option>
@@ -91,62 +99,74 @@
         
         <h2>Адаптивность</h2>
         <form action="k">
-            <select name="list3" id="list" value="" placeholder="Выберите пункт...">
+            <select name="list3" id="list3" value="">
+            <option value="" disabled selected>Выберите пункт...</option>
             <option value="Opt1">Значение1</option>
             <option value="Opt2">Значение2</option>
             <option value="Opt1">Значение3</option>
             <option value="Opt2">Значение4</option>    
             </select>
         </form>
+        </div>
         
-            <p>
-                Сроки   0
-            </p>
-            <p>
-                Стоимость   0
-            </p>
+            <div class="deadlines">
+                Сроки 0
+            </div>
+            <div class="price">
+                Стоимость  0         
+            </div>
         </div>
     </div>
     
-    <div class="Немного статистики">
+    <div class="SomeStatistics">
         <div class="title_container6">
             <h1>Немного статистики</h1>
-            <ol>
-                <li><h2>0</h2><br><h4>Счастливых клиентов</h4></li>
-                <li><h2>0</h2><br><h4>Часов работы</h4></li>
-                <li><h2>0</h2><br><h4>Проектов завершено</h4></li>
-                <li><h2>0</h2><br><h4>Наград получено</h4></li>
-            </ol>
+            <center><div class="decor"></div></center>
+            <ul>
+                <li class="olLi1"><h2>0</h2><br><h4>Счастливых клиентов</h4></li>
+                <li class="olLi2"><h2>0</h2><br><h4>Часов работы</h4></li>
+                <li class="olLi3"><h2>0</h2><br><h4>Проектов завершено</h4></li>
+                <li class="olLi4"><h2>0</h2><br><h4>Наград получено</h4></li>
+            </ul>
         </div>
     </div>
     
-    <div class="Отзывы">
+    <div class="reviews">
         <div class="title_container7">
             <h1>Отзывы</h1>
-            <img src="screenshot" alt="Здесь должна быть ваша фотка)">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, facere repudiandae, architecto soluta ab aut!</p>
-            <p><b>Михаил</b>, Ген директор компании "Газпром"</p>
+            <center><div class="decor"></div></center>
+            <img>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, facere repudiandae, architecto soluta ab aut!<br>
+            <b>Михаил</b>, Ген директор компании "Газпром"</p>
+            <input type="radio" name="text_input1" value="1">
+            <input type="radio" name="text_input2" value="2">
+            <input type="radio" name="text_input3" value="3">
         </div>
     </div>
     
-    <div class="Мои контакты">
+    <div class="MyContacs">
         <div class="title_container8">
             <h1>Мои контакты</h1>
+            <center><div class="decor"></div></center>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis, sunt laboriosam? Tenetur, soluta iusto!</p>
             <ul>
-                <li>Санкт-Петербург<br>Невский проспект 11</li>
-                <li>email@mail.ru</li>
-                <li>+7 999 999-99-99</li>
+                <li class="geo">Санкт-Петербург<br>Невский проспект 11</li>
+                <li class="mail">email@mail.ru</li>
+                <li class="phone">+7 999 999-99-99</li>
             </ul>
             
             <h3>Оставьте мне сообщение</h3>
             <form action="p">
             <input type="text" name="text_input" placeholder="Имя">
             <input type="text" name="text_input" placeholder="Email">
-            <br> <input type="text" name="text_input" placeholder="Сообщение">
-            <br><input tyoe="submit" value="Отправить">
+                <br> <textarea name="comment" placeholder="Сообщение"></textarea>
+            <br><input type="submit" value="Отправить" class="go">
             </form>
         </div>
     </div>
 </body>
 </html>
+
+
+
+
